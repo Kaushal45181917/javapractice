@@ -1,0 +1,36 @@
+import java.util.Random;
+import java.util.Scanner;
+class Proj3_03_Guessnumber
+{
+    public static void main(String[] args)
+    {
+        int r;
+        Random rc=new Random();
+        r=rc.nextInt(1,101);
+        int g;
+        System.out.println("Enter you guess:");
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<100;i++)
+        {
+            g=sc.nextInt();
+            if(g==r)
+            {
+                System.out.println("Congratualtions! You have guessed the correct number in "+i+"guesses,Thanks for Playing!");
+                break;
+            }
+            else if(g>r)
+            {
+                System.out.println("Your guess is higher");
+            }
+            else if(g<r)
+            {
+                System.out.println("Your guess is lower");
+            }
+            else
+            {
+                System.out.println("That was a wasted guess pick a number between 1 to 100(inclusive)!");
+            }
+        }
+        
+    }
+}
