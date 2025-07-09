@@ -8,7 +8,7 @@ class Proj3_03_Guessnumber
         Random rc=new Random();
         r=rc.nextInt(1,101);
         int g;
-        System.out.println("Enter you guess:");
+        System.out.println("Enter you guess between 1 to 100(inclusive):");
         Scanner sc=new Scanner(System.in);
         for(int i=0;i<100;i++)
         {
